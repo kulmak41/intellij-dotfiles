@@ -1,0 +1,4 @@
+[
+  {"shortcut": "meta R", "action": "Find"},
+  {"shortcut": "control S", "action": "Replace"}
+]
