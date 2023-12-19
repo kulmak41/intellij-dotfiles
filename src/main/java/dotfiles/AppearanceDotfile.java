@@ -53,9 +53,8 @@ public class AppearanceDotfile extends Dotfile {
     public void apply() {
         ObjectMapper mapper = new ObjectMapper();
         File file = new File(getPath());
-        Appearance appearance = null;
         try {
-            appearance = mapper.readValue(file, Appearance.class);
+            Appearance appearance = mapper.readValue(file, Appearance.class);
             if (appearance.getTheme() != null) {
                 LafManager lafManager = LafManager.getInstance();
                 var themes = lafManager.getInstalledLookAndFeels();
